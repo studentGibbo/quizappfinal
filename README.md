@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Basketball Quiz App
 A dynamic quiz app with user authentication designed to generate a series of 100 questions until it runs out. Users are able to register, or log into their existing account to begin the quiz. The questions are divided amongst difficulty: easy (1), medium(2), and hard (3).
 
@@ -52,4 +51,3 @@ The application uses the following main dependencies:
 =======
 # quizappfinal
 new project repo because old one did not work
->>>>>>> d03fa67d6156b23b8fd642dde514b62c7d5b7b79
