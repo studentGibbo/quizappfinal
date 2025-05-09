@@ -1,5 +1,8 @@
 const mongoose = require('mongoose');
 
+// Author: Gibbs The Goat
+// Purpose: Defines the schema for quiz questions
+
 const questionSchema = new mongoose.Schema({
   text: { type: String, required: true },
   options: { type: [String], required: true },
