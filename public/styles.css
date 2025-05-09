@@ -1,0 +1,56 @@
+/* styles.css */
+/*Author: Drew Ambrosino*/
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+}
+
+.stats p {
+  margin: 0.5rem 0;
+}
+
+.actions {
+  margin: 1rem 0;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+
+.leaderboard {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.leaderboard th,
+.leaderboard td {
+  border: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.leaderboard th {
+  background: #f4f4f4;
+}
+
+.leaderboard tr.you {
+  background: #e0f7fa;
+}

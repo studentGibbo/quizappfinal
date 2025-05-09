@@ -1,0 +1,21 @@
+<!-- Author: Michael Morris -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Quiz Results</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Results</h1>
+    <p>You answered <strong><%= correct %></strong> out of <strong><%= total %></strong> questions correctly.</p>
+    <p>Your accuracy: <strong><%= accuracy %></strong>%</p>
+    <div class="actions">
+      <a href="/quiz" class="btn">Play Again</a>
+      <a href="/home" class="btn">Home</a>
+    </div>
+  </div>
+</body>
+</html>

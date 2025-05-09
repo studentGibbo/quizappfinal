@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz</title>
+  <link rel="stylesheet" href="/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="container">
+    <h1>Quiz Time!</h1>
+    <form action="/submit-quiz" method="POST">
+      <% questions.forEach((q, index) => { %>
+        <div class="question">
+          <h3>Q<%= index + 1 %>: <%= q.text %>
+            <span style="font-size: small; color: gray;">
+              (Difficulty:
+              <% if (q.difficulty === 1) { %>Easy<% } %>
+              <% if (q.difficulty === 2) { %>Medium<% } %>
+              <% if (q.difficulty === 3) { %>Hard<% } %>
+              )
+              </span>
+          </h3>
+          <% q.options.forEach((opt, i) => { %>
+            <input type="radio" name="answers[<%= q._id.toString() %>]" value="<%= i %>" required>
+            <label><%= opt %></label><br>
+          <% }); %>
+        </div>
+      <% }); %>
+      <button type="submit">Submit Answers</button>
+    </form>
+  </div>
+</body>
+</html>
